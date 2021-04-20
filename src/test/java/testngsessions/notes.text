@@ -1,0 +1,33 @@
+TestNG
+: unit testing framework
+: QA automation
+: Only for JAVA
+: Junit
+
+Python: Pytest, unittest
+C#: Nunit
+Php: PhpUnit
+JS : Jasmine, Mocha
+
+: to write the test cases
+	: with annotations
+		: pre conditions
+		: test steps
+		: post steps
+
+: open source
+: can integrated with Maven, Gradle
+: can be integrated with Jenkins (CI-CD)
+: generates html reports, Allure, Extent Report
+: provides many annotations to design the and maintain the test cases
+: provides Data Provider for Data Driven Testing
+
+Test Case:
+Global Pre Conditions: @BeforeSuite, @BeforeTest, @BeforeClass
+Pre Conditions: @BeforeMethod
+	Test Steps: @Test, @DataProvider
+	Actual vs Expected Result -- Assertions
+Post Steps : @AfterMethod
+Global Post steps : @AfterClass, @AfterTest, @AfterSuite
+
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test automtion regression suite" thread-count="3"
+	parallel="tests" verbose="3">
+
+	<test name="Orange HRM Test - chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="MyTests.OrangeHRMTest">
+			</class>
+		</classes>
+	</test>
+	<test name="Orange HRM Test - firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="MyTests.OrangeHRMTest">
+			</class>
+		</classes>
+	</test>
+	<test name="Orange HRM Test - safari">
+		<parameter name="browser" value="safari" />
+		<classes>
+			<class name="MyTests.OrangeHRMTest">
+			</class>
+		</classes>
+	</test>
+
+	<test name="OpenCart Test - safari">
+		<parameter name="browser" value="safari" />
+
+		<classes>
+			<class name="MyTests.DemoCartTest" />
+		</classes>
+	</test>
+	<test name="OpenCart Test - chrome">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="MyTests.DemoCartTest" />
+		</classes>
+	</test>
+	<test name="OpenCart Test - firefox">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="MyTests.DemoCartTest" />
+		</classes>
+	</test>
+
+	<test name="Amazon Test">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="MyTests.AmazonTest" />
+		</classes>
+	</test>
+
+</suite>
